@@ -1,0 +1,39 @@
+.visor{
+	width: 85vh;
+	border:solid 1px black;
+	border-radius: 3px;;
+	padding: 5px;
+	justify-content: end;
+}
+
+.operation{
+	width: 20vh;
+	margin:4px;
+	margin-top: 20px;
+	padding: 12px 40px;
+	border: solid 1px gray;
+	align-content: center;
+	justify-content: center;
+}
+
+.number{
+	align-self: flex-start;
+	width: 22vh;
+	padding: 12px;
+	margin: 10px 5px 10px 5px;
+	border: solid 1px gray;
+}
+
+.result{
+	align-self: flex-start;
+	width: 25vh;
+	padding: 12px;
+	margin: 10px 5px 10px 5px;
+	border: solid 1px blue;
+}
+
+
+.calculator{
+	border:solid 1px black;
+	padding-top: 30px;
+}
