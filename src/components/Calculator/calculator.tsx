@@ -5,22 +5,22 @@ import './calculator.scss'
 import * as ts from "typescript";
 
 
-function createOperationsButtons(setValue){
+function createOperationsButtons(setValue : Function){
 	const operationsButtons = [];
 	const [ops, setOps] = useState(['+','-','/','*'])
 	for(let op of ops){
 		operationsButtons.push(
-			<button type="button" className="operation" onClick={() => setValue((value) => value + ' ' + op + ' ')} > {op} </button>
+			<button type="button" className="operation" onClick={() => setValue((value : string) => value + ' ' + op + ' ')} > {op} </button>
 		)
 	}
 	return operationsButtons;
 }
 
-function createNumberButtons(setValue) {
+function createNumberButtons(setValue : Function) {
 	const numberButtons = []
 	for(let i=0; i<9; i++){
 		numberButtons.push(
-			<button type="button" className="number" onClick={() => setValue((value) => value + (i+1) )}>{i+1}</button>
+			<button type="button" className="number" onClick={() => setValue((value : number) => value + (i+1) )}>{i+1}</button>
 		)
 	}
 	return numberButtons;
